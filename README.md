@@ -26,7 +26,7 @@ ${execpi n (/home/username/mybin/mpd_queue_stats)}
 Note there is a line-break, and then the string sends the cursor to the middle of the line and then adds an offset of 50 pixels before outputting the percent. This is what I needed for my conky setup. If your needs differ, adjust the output string to suit you. My .conkymusic file sets the window to 280 pixels wide.
 
 ## Building
-If you are unfamiliar with Rust, the folder `mpd_queue_stats` is the root of the crate. A crate describes a project and its dependencies. The actual code is located in the `mpd_queue_stats/src' folder, and is named `mpd_queue_stats.rs'. In this file is a constant which needs changing if your MPD is not running on the same machine as your instance of Conky, or uses a different port. The line looks like this:
+If you are unfamiliar with Rust, the folder `mpd_queue_stats` is the root of the crate. A crate describes a project and its dependencies. The actual code is located in the `mpd_queue_stats/src` folder, and is named `mpd_queue_stats.rs`. In this file is a constant which needs changing if your MPD is not running on the same machine as your instance of Conky, or uses a different port. The line looks like this:
 ```
 const HOST: &str = "localhost:6600";
 ```
