@@ -18,7 +18,7 @@ In conky, this is invoked this way:
 ```
 ${execpi n (mpd_queue_stats)}
 ```
-...where n is an integer defining how often conky calls this function. Note that either mpd_queue_stats must be on the $PATH available to Conky when it is run, or you must must include a complete path to the mpd_queue_stats executable. e.g.
+...where n is an integer defining how often conky calls this function. Note that either mpd_queue_stats must be on the $PATH available to Conky when it is run, or you must include a complete path to the mpd_queue_stats executable. e.g.
 ```
 ${execpi n (/home/username/mybin/mpd_queue_stats)}
 ```
