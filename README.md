@@ -40,3 +40,8 @@ If everything goes well:
 $ cargo build --release
 ```
 The executable will be found as `mpd_queue_stats/target/release/mpd_queue_stats`.
+
+## See Also
+1. [mpd_queue_len](https://github.com/stroggprog/mpd_queue_len)
+2. [mpd_queue_stats](https://github.com/stroggprog/mpd_queue_stats)
+3. [mpd_percent](https://github.com/stroggprog/mpd_percent)
