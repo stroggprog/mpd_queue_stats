@@ -2,17 +2,16 @@
 
 This program, written in Rust, returns a string for use by Conky. The string is in the following format:
 ```
-"{}${{alignc}}{}${{alignr}}${{offset -5}}{}\n$alignc${{offset 50}}{pc}%"
+"{}${{alignc}}{}${{alignr}}${{offset -5}}{}\n$alignc${{voffset -40}}${{offset 30}}{:.2}%"
 ```
 ...where each `{}` is replaced by the following values in this order:
 
     1. Elapsed time
     2. Total length of the queue
     3. Remaining time
+    4. Percent elapsed
 
 Note that all values relate to the queue, not the currently playing song, although the 'Elapsed time' also includes the elapsed time of the current song.
-
-The `pc` value is the elapsed time expressed as a percent.
 
 In conky, this is invoked this way:
 ```
