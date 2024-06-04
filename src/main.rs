@@ -43,7 +43,8 @@ fn main(){
         let dur: i64 = duration as i64;
         let ele: i64 = elapsed as i64;
         let rt = dur.abs_diff(ele);
-        let pc = ((elapsed as f32/duration as f32)*100.0) as u32;
-        println!("{}${{alignc}}{}${{alignr}}${{offset -5}}{}\n$alignc${{offset 50}}{pc}%", secs_to_time(elapsed as u64), secs_to_time(duration), secs_to_time(rt));
+        let pc = ((elapsed as f32/duration as f32)*100.0) as f32;
+        // ${voffset -103}
+        println!("{}${{alignc}}{}${{alignr}}${{offset -5}}{}\n$alignc${{voffset -40}}${{offset 30}}{:.2}%", secs_to_time(elapsed as u64), secs_to_time(duration), secs_to_time(rt), pc);
     }
 }
